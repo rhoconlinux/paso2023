@@ -13,28 +13,28 @@ import plotly.graph_objects as go
 # EXCEL TEST: https://docs.google.com/spreadsheets/d/1r8k3yu4SjegdwVhGgLbDjDPgcxE1zL2uuGRvi2bxLZY/edit#gid=0
 st.set_page_config(page_title="Resultados Provisorios PASO 2023", page_icon="", layout="wide")
 
- Hard-coded usernames and passwords
- credentials = {
-     "user": "123",
-     "Usuario_Alto_Nivel": "Acc3d#r",
-     "Usuario": "acceso_resultados123"
- }
- 
- session_state = st.session_state
- if 'logged_in' not in session_state:
-     session_state.logged_in = False
- if not session_state.logged_in:
-     st.title("Login")
-     username = st.text_input("Username")
-     password = st.text_input("Password", type="password")
-     if st.button("Login"):  # Existing login button
-         if username in credentials and credentials[username] == password:
-             st.success("Acceso correcto!")
-             session_state.logged_in = True
-             st.experimental_rerun()  # Add this line to force rerun of the script after successful login
-         else:
-             st.error("Username/password is incorrect")
- else:
+# Hard-coded usernames and passwords
+credentials = {
+    "user": "123",
+    "Usuario_Alto_Nivel": "Acc3d#r",
+    "Usuario": "acceso_resultados123"
+}
+
+session_state = st.session_state
+if 'logged_in' not in session_state:
+    session_state.logged_in = False
+if not session_state.logged_in:
+    st.title("Login")
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
+    if st.button("Login"):  # Existing login button
+        if username in credentials and credentials[username] == password:
+            st.success("Acceso correcto!")
+            session_state.logged_in = True
+            st.experimental_rerun()  # Add this line to force rerun of the script after successful login
+        else:
+            st.error("Username/password is incorrect")
+else:
 
 #if 1==2:
 #    page_title="loco"
