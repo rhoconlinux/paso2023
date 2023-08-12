@@ -1,4 +1,6 @@
-openpyxl
-plotly
-pandas
-gdown
+gdown==4.7.1
+plotly==5.15.0
+plotly-express==0.4.1
+streamlit==1.25.0
+pandas==2.0.3
+openpyxl==3.1.2
