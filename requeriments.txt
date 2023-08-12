@@ -1,4 +1,5 @@
 openpyxl
 plotly-express
+plotly
 pandas
 gdown
