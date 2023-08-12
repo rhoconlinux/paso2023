@@ -1,4 +1,3 @@
-#!pip install -r requeriments.txt
 import pickle
 from pathlib import Path
 import pandas as pd  # pip install pandas openpyxl plotly-express streamlit
